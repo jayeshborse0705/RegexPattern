@@ -11,10 +11,23 @@ namespace UserRegistrationRegex
     {
         Regex regex = new Regex("^[A-Z]{1}[A-Za-z]{2,}$");
 
+
         public void ValidFirstName(string First_Name)
         {
             Console.WriteLine("Enter FirstName:" + First_Name);
             if (regex.IsMatch(First_Name))
+            {
+                Console.WriteLine("valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
+        }
+        public void ValidLastName(string Last_Name)
+        {
+            Console.WriteLine("Enter LastName:" + Last_Name);
+            if (regex.IsMatch(Last_Name))
             {
                 Console.WriteLine("valid");
             }
