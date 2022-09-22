@@ -17,6 +17,14 @@ namespace UserRegistrationRegex
             Console.WriteLine("Enter Email_id:");
             string Email_id = Console.ReadLine();
             paterns.ValidEmail_Id(Email_id);
+
+            Console.WriteLine("Enter phoneNo:");
+            string Phone = Console.ReadLine().Trim();
+            paterns.ValidPhoneNO(Phone);
+
+            Console.WriteLine("Enter password:");
+            string Password1 = Console.ReadLine().Trim();
+            paterns.ValidPhoneNO(Password1);
         }
     }
 }
